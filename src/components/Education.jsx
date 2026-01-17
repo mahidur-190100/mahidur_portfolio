@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FaGraduationCap, FaCalendarAlt, FaSchool, FaUniversity, FaGlobe } from 'react-icons/fa'
-import { desc } from 'framer-motion/client'
 
 const Education = () => {
   const [ref, inView] = useInView({
@@ -37,7 +36,7 @@ const Education = () => {
   ]
 
   return (
-    <section id="education" className="py-20 px-6" ref={ref}>
+    <section id="education" className="py-20 px-4 md:px-6" ref={ref}>
       <div className="max-w-6xl mx-auto">
         {/* Main Header */}
         <motion.div
@@ -120,7 +119,8 @@ const Education = () => {
                 whileHover={{ y: -5 }}
                 className="bg-gray-800/40 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50"
               >
-                <div className="flex items-center justify-between mb-4">
+                {/* Language Name and Flag - Desktop Layout */}
+                <div className="hidden md:flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
                     <span className="text-2xl">{lang.flag}</span>
                     <h4 className="font-bold text-lg">{lang.name}</h4>
@@ -128,6 +128,18 @@ const Education = () => {
                   <span className="text-sm text-gray-400">{lang.level}</span>
                 </div>
                 
+                {/* Language Name and Flag - Mobile Layout */}
+                <div className="md:hidden mb-4">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="text-2xl">{lang.flag}</span>
+                    <h4 className="font-bold text-lg">{lang.name}</h4>
+                  </div>
+                  <div className="text-sm text-gray-400">
+                    {lang.level}
+                  </div>
+                </div>
+                
+                {/* Progress Bar */}
                 <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}

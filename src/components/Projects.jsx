@@ -29,12 +29,11 @@ const Projects = () => {
         github: "https://github.com/mahidur-190100/emergency-hotline"
       },
       image: "https://i.ibb.co.com/fzBQ7d7b/Chat-GPT-Image-Jan-17-2026-10-07-54-PM.jpg"
-      
     }
   ]
 
   return (
-    <section id="projects" className="py-20 px-6" ref={ref}>
+    <section id="projects" className="py-20 px-4 md:px-6" ref={ref}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -72,32 +71,35 @@ const Projects = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-900/30 to-purple-900/30"></div>
                 </div>
                 
-                <div className="md:w-2/3 p-8">
+                <div className="md:w-2/3 p-6 md:p-8">
                   <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
                   <p className="text-gray-300 mb-6">{project.description}</p>
                   
-                  <div className="flex flex-wrap gap-3 mb-8">
+                  <div className="flex flex-wrap gap-3 mb-6 md:mb-8">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-4 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm border border-blue-700/50"
+                        className="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm border border-blue-700/50"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
                   
-                  <div className="flex gap-4">
+                  {/* Responsive Button Container */}
+                  <div className="flex flex-wrap gap-3">
                     {project.links.live && (
                       <motion.a
                         href={project.links.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        whileHover={{ scale: 1.1 }}
+                        whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/30 transition-all"
+                        className="flex items-center justify-center gap-2 px-4 py-3 md:px-6 md:py-3 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/30 transition-all text-sm md:text-base flex-1 min-w-[140px]"
                       >
-                        <FaGlobe /> Live Demo
+                        <FaGlobe className="text-sm md:text-base" /> 
+                        <span className="hidden sm:inline">Live Demo</span>
+                        <span className="sm:hidden">Live</span>
                       </motion.a>
                     )}
                     
@@ -106,11 +108,13 @@ const Projects = () => {
                         href={project.links.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        whileHover={{ scale: 1.1 }}
+                        whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="flex items-center gap-2 px-6 py-3 bg-gray-700 rounded-full font-semibold hover:bg-gray-600 transition-all"
+                        className="flex items-center justify-center gap-2 px-4 py-3 md:px-6 md:py-3 bg-gray-700 rounded-full font-semibold hover:bg-gray-600 transition-all text-sm md:text-base flex-1 min-w-[140px]"
                       >
-                        <FaGithub /> GitHub
+                        <FaGithub className="text-sm md:text-base" /> 
+                        <span className="hidden sm:inline">GitHub</span>
+                        <span className="sm:hidden">GitHub</span>
                       </motion.a>
                     )}
                     
@@ -119,11 +123,13 @@ const Projects = () => {
                         href={project.links.client}
                         target="_blank"
                         rel="noopener noreferrer"
-                        whileHover={{ scale: 1.1 }}
+                        whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="flex items-center gap-2 px-6 py-3 bg-purple-600 rounded-full font-semibold hover:bg-purple-700 transition-all"
+                        className="flex items-center justify-center gap-2 px-4 py-3 md:px-6 md:py-3 bg-purple-600 rounded-full font-semibold hover:bg-purple-700 transition-all text-sm md:text-base flex-1 min-w-[140px]"
                       >
-                        <FaGithub /> Client
+                        <FaGithub className="text-sm md:text-base" /> 
+                        <span className="hidden sm:inline">Client Code</span>
+                        <span className="sm:hidden">Client</span>
                       </motion.a>
                     )}
                     
@@ -132,11 +138,13 @@ const Projects = () => {
                         href={project.links.server}
                         target="_blank"
                         rel="noopener noreferrer"
-                        whileHover={{ scale: 1.1 }}
+                        whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="flex items-center gap-2 px-6 py-3 bg-green-600 rounded-full font-semibold hover:bg-green-700 transition-all"
+                        className="flex items-center justify-center gap-2 px-4 py-3 md:px-6 md:py-3 bg-green-600 rounded-full font-semibold hover:bg-green-700 transition-all text-sm md:text-base flex-1 min-w-[140px]"
                       >
-                        <FaServer /> Server
+                        <FaServer className="text-sm md:text-base" /> 
+                        <span className="hidden sm:inline">Server Code</span>
+                        <span className="sm:hidden">Server</span>
                       </motion.a>
                     )}
                   </div>

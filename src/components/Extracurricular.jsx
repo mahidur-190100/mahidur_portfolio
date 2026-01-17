@@ -20,7 +20,7 @@ const Extracurricular = () => {
     {
       title: "Senior Executive, Finance Department",
       organization: "BRAC University Compute Club",
-      period: "2022 - 2023",
+      period: "2024 - 2025",
       description: "Managed club finances, budget planning, and financial reporting for technical events and workshops.",
       icon: <FaChartLine />,
       color: "from-purple-500 to-pink-500"
