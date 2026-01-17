@@ -1,16 +1,32 @@
-# React + Vite
+A modern, responsive portfolio website built with React, Vite, Tailwind CSS, and Framer Motion animations.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+🎨 Modern Design: Dark theme with gradient accents and glass morphism effects
 
-Currently, two official plugins are available:
+⚡ Fast Performance: Built with Vite for lightning-fast builds and HMR
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📱 Fully Responsive: Optimized for all devices from mobile to desktop
 
-## React Compiler
+🎭 Smooth Animations: Powered by Framer Motion & AOS (Animate On Scroll)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🌈 Interactive Elements:
 
-## Expanding the ESLint configuration
+Custom animated cursor (desktop only)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Hover effects
+
+Typewriter animations
+
+Scroll-triggered animations
+
+📊 Skills Visualization: Interactive skill cards with icons
+
+📞 Contact Form with Discord Integration:
+
+Messages sent directly to Discord via webhook
+
+Instant notifications with visitor details
+
+Bangladesh time stamp included
+
+🌙 Dark Mode: Built-in dark theme aesthetics
