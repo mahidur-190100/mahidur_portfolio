@@ -26,7 +26,7 @@ const Contact = () => {
   const [isLoading, setIsLoading] = useState(false)
 
   // Your Discord webhook URL
-  const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1462147818851536896/HBAmvTsjBdXbrk9H6tjFOnAcurWhQzw--bzsdwCR0f2UZbZTroJ3zCrWbnZDvI2LxN4I'
+  const DISCORD_WEBHOOK_URL = VITE_DISCORD_WEBHOOK_URL
 
   // Send message to Discord webhook
   const sendToDiscord = async (data) => {
