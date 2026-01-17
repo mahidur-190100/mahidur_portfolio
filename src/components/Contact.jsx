@@ -25,12 +25,11 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
 
-  // Your Discord webhook URL
-<<<<<<< HEAD
+  //Discord webhook URL
+
   const DISCORD_WEBHOOK_URL = import.meta.env.VITE_DISCORD_WEBHOOK_URL
-=======
-  const DISCORD_WEBHOOK_URL = VITE_DISCORD_WEBHOOK_URL
->>>>>>> dc5db006304a953741012cb89b0758f434a85ac2
+
+
 
   // Send message to Discord webhook
   const sendToDiscord = async (data) => {
