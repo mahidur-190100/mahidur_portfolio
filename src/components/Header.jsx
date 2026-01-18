@@ -32,6 +32,7 @@ const Header = () => {
 
   const navItems = [
     { name: 'Home', id: 'hero' },
+    { name: 'About', id: 'about' },  // ✅ Added About section
     { name: 'Skills', id: 'skills' },
     { name: 'Projects', id: 'projects' },
     { name: 'Education', id: 'education' },
@@ -108,8 +109,8 @@ const Header = () => {
             ))}
           </motion.nav>
         )}
-    </div>
-    </motion.header >
+      </div>
+    </motion.header>
   )
 }
 

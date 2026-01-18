@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Education from './components/Education'
 import Extracurricular from './components/Extracurricular'
 import Contact from './components/Contact'
+import About from './components/About'
 
 function App() {
   const [isMobile, setIsMobile] = useState(false)
@@ -79,6 +80,7 @@ function App() {
       <div className="relative z-10">
         <Header />
         <Hero />
+        <About />
         <Skills />
         <Projects />
         <Education />
